@@ -17,9 +17,10 @@ export const IndexPageTemplate = ({
   main,
 }) => (
   <div>
-    <div
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
+        border: "1px solid blue",
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
@@ -94,25 +95,25 @@ export const IndexPageTemplate = ({
                       See all products
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
+                  {/* <h3 className="has-text-weight-semibold is-size-2">
+                    Derniers articles
+                  </h3> */}
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
-                      Read more
+                      Lire plus
                     </Link>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </section>
+  // </div>
 )
 
 IndexPageTemplate.propTypes = {
