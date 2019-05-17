@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-// import logo from "../img/logo.svg";
-import mfrb from '../img/mfrb.svg';
+import mfrb from "../img/mfrb.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -12,8 +10,6 @@ const Navbar = class extends React.Component {
       navBarActiveClass: ""
     };
   }
-
-  
 
   toggleHamburger = () => {
     // toggle the active boolean in the state
@@ -39,7 +35,7 @@ const Navbar = class extends React.Component {
     return (
       <nav
         className="navbar"
-        style={{backgroudColor:"#f8ea2e"}}
+        style={{ backgroudColor: "#f8ea2e" }}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -54,7 +50,7 @@ const Navbar = class extends React.Component {
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
-            {/* Hamburger/cross icons */}
+              {/* Hamburger/cross icons */}
               <span />
               <span />
               <span />
@@ -64,9 +60,12 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div  className="navbar-start has-text-centered" style={{marginRight: 0}}>
+            <div
+              className="navbar-start has-text-centered"
+              style={{ marginRight: 0 }}
+            >
               <Link className="navbar-item" to="/about">
-                A propos
+                Le groupe
               </Link>
               <Link className="navbar-item" to="/contact">
                 Contact
@@ -78,9 +77,7 @@ const Navbar = class extends React.Component {
                 href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                
-              </a>
+              />
             </div>
           </div>
         </div>

@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import mfrb from "../img/mfrb.svg";
 import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
 
 const footerColor = { backgroundColor: "#f8ea2e", color: "#2b2523" };
 
@@ -20,7 +18,7 @@ const Footer = class extends React.Component {
           />
         </div>
         <div style={footerColor} className="content">
-          <div className="container" >
+          <div className="container">
             <div className="columns">
               <div className="column is-4">
                 <section className="menu">
@@ -71,12 +69,11 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a style={{border: "1px solid blue"}} title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{
-                      border: "1px solid blue",
                       width: "1em",
                       height: "1em"
                     }}
